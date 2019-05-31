@@ -1,9 +1,9 @@
-This is a custom select used in [dottori.it](https://www.dottori.it/) applications
+This is a custom react select used in [dottori.it](https://www.dottori.it/) applications.
 
 Installation
 ------------
 
-`npm install --save fancy-react-select` or with yarn `yarn add fancy-react-select`  
+`npm install --save fancy-react-select` or `yarn add fancy-react-select`
 
 Usage
 -----
@@ -49,7 +49,7 @@ class ShowCarsComponent extends Component {
   return (
     <FancyReactSelect 
         items={this.state.cars}
-        showItemsOptions={showDoctorsOptions}
+        showItemsOptions={showSelectOptions}
         currentItem={this.state.currentCar}
         onSelectItemHandler={this.updateSelectedCar}
         onClickDefaultItemHandler={this.dropDownSelectOptions}
@@ -60,3 +60,22 @@ class ShowCarsComponent extends Component {
 
 export default FancyReactSelect;
 ```
+
+Props
+-----  
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `items`  | array | arrays of items |
+| `currentItem` | object | the current item displayed as the select current value |
+| `showItemsOptions` | boolean | if `true` the select opens and displays the options else it closes |
+| `onSelectItemHandler` | function | the function called when an item is selected with the selected item as parameter |
+| `onClickDefaultItemHandler` | function | this function controlls `showItemsOptions`. It's important because if there is no other option than the selected item this is where you force the select to remain closed. |
+
+
+Todo
+----  
+
+- Add `propType`
+- Write tests
+- In-depth browser testing
