@@ -1,6 +1,6 @@
 {
   "name": "fancy-react-select",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "fancy select with default css",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,9 @@
     "Komlanvi Amegbleame <komlanvi.amegbleame@gmail.com> (https://github.com/komlanvi)",
     "Nadia Guarracino <nadia.guarracino@dottori.it>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dottori-it/fancy-react-select"
+  },
   "license": "ISC"
 }
