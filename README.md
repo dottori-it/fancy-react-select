@@ -46,15 +46,17 @@ class ShowCarsComponent extends Component {
     });
   }
   
-  return (
-    <FancyReactSelect 
-        items={this.state.cars}
-        showItemsOptions={showSelectOptions}
-        currentItem={this.state.currentCar}
-        onSelectItemHandler={this.updateSelectedCar}
-        onClickDefaultItemHandler={this.dropDownSelectOptions}
-    />
-  )
+  render() {
+  	return (
+        <FancyReactSelect 
+            items={this.state.cars}
+            showItemsOptions={showSelectOptions}
+            currentItem={this.state.currentCar}
+            onSelectItemHandler={this.updateSelectedCar}
+            onClickDefaultItemHandler={this.dropDownSelectOptions}
+        />
+      )
+  }
 }
 
 
@@ -79,3 +81,7 @@ Todo
 - Add `propType`
 - Write tests
 - In-depth browser testing
+
+Notes
+-----
+This is a work in progress version. Don't use it in PROD!
