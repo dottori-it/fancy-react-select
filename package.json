@@ -22,8 +22,12 @@
   "peerDependencies": {
     "react": "16.x"
   },
-  "author": [
-    "Komlanvi Amegbleame <komlanvi.amegbleame@gmail.com> (https://github.com/komlanvi)",
+  "author": {
+    "name": "Komlanvi Amegbleame",
+    "email": "komlanvi.amegbleame@gmail.com",
+    "url": "https://github.com/komlanvi"
+  },
+  "contributors": [
     "Nadia Guarracino <nadia.guarracino@dottori.it>"
   ],
   "repository": {
