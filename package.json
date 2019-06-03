@@ -1,6 +1,6 @@
 {
   "name": "fancy-react-select",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "fancy select with default css",
   "main": "index.js",
   "scripts": {
